@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRUD Application</h1>
+ 
+    <!-- Formulário para adicionar usuário -->
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+ 
+    <!-- Formulário para atualizar usuário -->
+    <form id="updateForm" style="display: none;">
+        <input type="hidden" id="updateId">
+        <input type="text" id="updateName" placeholder="Name" required>
+        <input type="email" id="updateEmail" placeholder="Email" required>
+        <input type="number" id="updateAge" placeholder="Age" required>
+        <button type="submit">Update User</button>
+    </form>
+ 
+    <!-- Tabela de usuários -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+    </table>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
